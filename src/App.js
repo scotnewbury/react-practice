@@ -1,22 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
+import './Navigation.css';
+
+function Navigation() {
+  return (
+    <ul className="main-navigation">
+      <li className="logo"><a href="#">The LOGO</a></li>
+      <li className="push-right menu-item"><a href="#">Item 1</a></li>
+      <li className="menu-item"><a href="#">Item 2</a></li>
+      <li className="menu-item"><a href="#">Item 3</a></li>
+      <li className="menu-item"><a href="#">Item 4</a></li>
+    </ul>
+  );
+}
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header>
+        <Navigation />
       </header>
     </div>
   );
