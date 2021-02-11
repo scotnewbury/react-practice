@@ -6,7 +6,7 @@ import {
   Switch,
 } from 'react-router-dom';
 
-import Navbar from './components/Navbar/Navbar';
+import Navbar from './Navbar';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import ProjectsPage from './pages/ProjectsPage';
