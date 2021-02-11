@@ -5,9 +5,11 @@ const HomePage = () => {
   return (
     <>
       <VideoBackground />
-      <h1>The Home Page</h1>
+      <div className="showcase">
+        <h1>The Home Page</h1>
+      </div>
     </>
   )
-};
+}
 
 export default HomePage;

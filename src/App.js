@@ -11,6 +11,7 @@ import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import ProjectsPage from './pages/ProjectsPage';
 import PageNotFound from './pages/PageNotFound';
+// import VideoBackground from './components/VideoBackground';
 
 function App() {
   return (
