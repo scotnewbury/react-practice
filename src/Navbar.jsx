@@ -1,17 +1,42 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
 import './Navbar.css';
 
+const Navbar = () => {
+  
+  const [navLinkOpen, navLinkToggle] = useState(false);
 
-const Navbar = () => (
-  <div className="nav">
-    <ul className="menu">
-      <li className="logo"><Link to="/">Scot Newbury</Link></li>
-      <li className="item"><Link to="/about">About</Link></li>
-      <li className="item"><Link to="/projects">Projects</Link></li>
-      <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
-    </ul>
-  </div>
-);
+  const handleNavLinksToggle = () => {
+    navLinkToggle(!navLinkOpen);
+  };
+
+  const renderClasses = () => {
+    let classes  = "navlinks";
+
+    if (navLinkOpen) {
+      classes += " active"
+    }
+
+    return classes
+  }
+
+  return (
+   <navbar>
+      <div className="logo">
+        <i className='fa fa-laptop'></i>
+        <h4>Scot Newbury</h4>
+      </div>
+      <ul className={renderClasses()}>
+        <li className="link"><Link to="/">Home</Link></li>
+        <li className="link"><Link to="/about">About</Link></li>
+        <li className="link"><Link to="/projects">Projects</Link></li>
+        <li className="link"><Link to="/contactme">Contact Me</Link></li>
+      </ul>
+      <div onClick={handleNavLinksToggle} className="hamburger-toggle">
+        <i className="fas fa-bars fa-lg"></i>
+      </div>
+  </navbar>
+  )
+}
 
 export default Navbar;
