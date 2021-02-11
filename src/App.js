@@ -6,7 +6,7 @@ import {
   Switch,
 } from 'react-router-dom';
 
-import NavBar from './NavBar';
+import Navbar from './Navbar';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import ProjectsPage from './pages/ProjectsPage';
@@ -16,7 +16,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <NavBar />
+        <Navbar />
         <Switch>
           <Route path="/" component={HomePage} exact />
           <Route path="/about" component={AboutPage} />
