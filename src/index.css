@@ -18,13 +18,29 @@ a {
 }
 
 
-.main {
-  /* background: radial-gradient(at center center, #2d7e9270 0%, #1c40617c 100%), url("./assets/images/background-image.jpg"); */
-  /* background-size: cover; */
-  /* background-position: center; */
+.pagestyle {
+  position: relative;
   height: 100vh;
-  width: 100vw;
-  background-color: rgb(50,111,142);
+  width: 100%;
+  /* background-color: rgb(50,111,142); */
+  /* background-color: sienna; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-image: url("./assets/images/background-image.jpg"); */
+}
+
+.pagestyle::before {
+  content: "";
+  background-image: url("./assets/images/background-image.jpg");
+  background-size: cover;
+  /* background-position: center; */
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: .3;
 }
 
 .showcase {

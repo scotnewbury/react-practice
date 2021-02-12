@@ -11,12 +11,11 @@ import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import ProjectsPage from './pages/ProjectsPage';
 import PageNotFound from './pages/PageNotFound';
-// import VideoBackground from './components/VideoBackground';
 
 function App() {
   return (
     <Router>
-      <div className="App">
+      {/* <div className="main"> */}
         <Navbar />
         <Switch>
           <Route path="/" component={HomePage} exact />
@@ -24,7 +23,7 @@ function App() {
           <Route path="/projects" component={ProjectsPage} />
           <Route component={PageNotFound} />
         </Switch>
-      </div>
+      {/* </div> */}
     </Router>
   );
 }
