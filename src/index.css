@@ -32,7 +32,7 @@ a {
 
 .pagestyle::before {
   content: "";
-  background-image: url("./assets/images/background-image.jpg");
+  background-image: url("./assets/images/background-image.png");
   background-size: cover;
   /* background-position: center; */
   position: absolute;
